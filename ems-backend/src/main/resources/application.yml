@@ -1,0 +1,14 @@
+#DATABASE
+spring:
+    datasource:
+        driverClassName: org.mariadb.jdbc.Driver
+        url : jdbc:mariadb://localhost:3306/ems?characterEncoding-UTF-8&serverTimezone=UTC
+        username: ems
+        password: ems@123
+
+
+    jpa:
+        properties.hibernate.dialect=org.hibernate.dialect.MariaDBDialect
+        hibernate.ddl-auto=update
+
+
